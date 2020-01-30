@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+#validatie img {
+    height: 1em;
+    width: auto;
+    border: 0;
+    margin: 0 .3em;
+}
+
+body, html, h3 {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    padding: 2em;
+}
+header,aside {
+    background-color: rgba(180,220,255, 0.5);
+    
+}
+h1, h3 {font-family: 'PT Sans';}
+h1, .tagline {
+    color: #47a;
+}
+section, footer {
+    padding: 2em;
+}
+
+section {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 0;
+    padding-bottom: .2em;
+}
+section img {
+    max-width: 100%;
+}
+article {
+    padding: 1em;
+}
+
+.nummer {
+    background-color: #47a;
+    color: #fff;
+    font-size: 3em;
+    width: 1.2em;
+    text-align: right;
+    padding: .2em;
+}
+
+aside h3 {
+    background-color: #47a;
+    padding: 2em ;
+    color: #fff;
+}
+aside a {
+    text-decoration: none;
+    padding: 2em 0;
+    display: block;
+}
+aside a:hover {
+    background-color: #47a;
+    color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #eee;
+    padding: 2em;
+}
+footer a {
+    color: rgb(255, 128, 111);
+}
+
+@media screen and (min-width: 30em) {
+    .afbeelding {
+        display: block;
+        background-image: url('img/filler-img.jpg');
+        background-size: cover;
+        background-position: center center;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "kop kop"
+        "t1 t2"
+        "t3 t4"
+        "t5 t6"
+        "afbeelding t7"
+        "afbeelding aside"
+        "t8 aside"
+        "t9 aside"
+        "t10 aside"
+        "footer footer";
+    }
+    header {
+        grid-area: kop;
+    }
+    .t1 {
+        grid-area: t1;
+    }
+    .t2 {
+        grid-area: t2;
+    }
+    .t3 {
+        grid-area: t3;
+    }
+    .t4 {
+        grid-area: t4;
+    }
+    .t5 {
+        grid-area: t5;
+    }
+    .t6 {
+        grid-area: t6;
+    }
+    .t7 {
+        grid-area: t7;
+    }
+    .t8 {
+        grid-area: t8;
+    }
+    .t9 {
+        grid-area: t9;
+    }
+    .t10 {
+        grid-area: t10;
+    }
+    .afbeelding {
+        grid-area: afbeelding;
+    }
+    aside {
+        grid-area: aside;
+    }
+    footer {
+        grid-area: footer;
+    }
+}
+
+@media screen and (min-width: 1000px) { 
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "kop kop kop"
+        "t1 t2 t3"
+        "t4 t5 aside"
+        "afbeelding t6 aside"
+        "t7 t7 aside"
+        "t8 t9 t10"
+        "footer footer aside";
+    }
+  
+}
